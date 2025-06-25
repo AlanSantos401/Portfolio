@@ -1,0 +1,386 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior:smooth;
+    
+}
+
+:root {
+    --primaria: #4f46e5;
+    --secundaria: #7c3aed;
+    --escuro: #0f172a;
+    --maisescuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: rgba(255, 255, 255, 0.1);
+}
+
+
+body {
+    background-color: #000;
+    color: var(--claro);
+}
+
+/* Header */
+
+.navegacao {
+    position: fixed;
+    background: rgba(15, 23, 42, 0.8);
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    gap: 3rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: var(--claro);
+    font-weigth: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.menu-link {
+    position: relative;
+    padding-bottom: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    transition: transform 0.4s ease;
+}
+
+.menu-link:hover::after,
+.menu-link.ativo::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/* Header */
+
+/* Inicio */
+
+.cabecalho {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    width: 50%;
+    height: 100vh;
+    font-size: 2.5rem;
+
+    span {
+        color: var(--secundaria);
+    }
+}
+
+.animar-esquerda {
+  opacity: 0;
+  transform: translateX(-200px);
+  animation: aparecerEsquerda 1s ease-out forwards;
+  animation-delay: 0.5s
+}
+
+.icons {
+    cursor: pointer;
+
+    img {
+      width: 35px;
+    }
+
+    a {
+      text-decoration: none;
+    }  
+}
+
+@keyframes aparecerEsquerda {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fundo {
+    height: 100vh;
+     width: 50%;
+
+     img{
+        width: 100%;
+        height: 700px;
+     }
+}
+
+/* Inicio */
+
+/* Sobre */
+
+.sobre {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-titulo {
+    font-size: 2.5rem;
+    margin-top: 7rem;
+}
+
+.sobre-text {
+
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.sobre-paragrafo {
+    width: 100%;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-perfil {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    img {
+        height: 500px;
+    }
+}
+
+/* Sobre */
+
+/* Habilidades */
+
+.habilidades {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.text-habilidades {
+  color: var(--secundaria);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.carrossel-container {
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.carrossel-habilidades {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.foto-habilidades {
+  flex: 0 0 auto;
+  width: 120px;
+  height: 180px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.foto-habilidades img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  pointer-events: none;
+  user-drag: none;
+}
+
+/* Habilidades */
+
+/* Projetos */
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--secundaria);
+  margin: 30px 0;
+}
+
+.projetos {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-projetos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.card-projeto {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+  background-color: #000;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.6);
+}
+
+.card-projeto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-projeto .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-projeto:hover {
+  transform: translateY(-10px);
+}
+
+.card-projeto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.btn-ver {
+  background-color: var(--secundaria);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-ver:hover {
+  background-color: #3b3bc1;
+}
+
+/* Projetos */
+
+/* Contatos */
+
+.contatos {
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.contatos-titulos {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.formulario-contato {
+    width: 500px;
+ max-width: 1200px;
+ margin: 0 auto;
+ background: rgba(255, 255, 255, 0.05);
+ background-filter: blur(5px);
+ padding: 2rem;
+ border: 1px solid var(--vidro);
+ border-radius: 16px;
+}
+
+.campo-form {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  color: var(--claro);
+  border: 1px solid var(--vidro);
+  outline: none;
+}
+
+.grupo-form {
+margin-bottom: 1.5rem;
+}
+
+.botao-form {
+    color: var(--claro);
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weigth: bold;
+    width: 100%;
+
+}
+
+/* Contatos */
