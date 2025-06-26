@@ -512,7 +512,7 @@ h2 {
 
 footer {
   width: 100%;
-  background-color: #444446;
+  background-color:rgba(29, 13, 40, 0.88);
     color: var(--claro);
     padding: 1.5rem 1rem;
     text-align: center;
