@@ -114,17 +114,6 @@ body.modal-aberto {
   animation-delay: 0.5s
 }
 
-.icons {
-    cursor: pointer;
-
-    img {
-      width: 35px;
-    }
-
-    a {
-      text-decoration: none;
-    }  
-}
 
 @keyframes aparecerEsquerda {
   to {
@@ -157,7 +146,7 @@ body.modal-aberto {
 
 .sobre-titulo {
     font-size: 2.5rem;
-    margin-top: 7rem;
+    margin-top: 9rem;
 }
 
 .sobre-text {
@@ -204,7 +193,7 @@ body.modal-aberto {
 .text-habilidades {
   color: var(--secundaria);
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
@@ -453,10 +442,11 @@ h2 {
 /* Contatos */
 
 .contatos {
- height: 100vh;
+ height: 90vh;
  display: flex;
  flex-direction: column;
  justify-content: center;
+ align-items: center;
 }
 
 .contatos-titulos {
@@ -465,41 +455,67 @@ h2 {
   margin-bottom: 50px;
 }
 
-.formulario-contato {
-    width: 500px;
- max-width: 1200px;
- margin: 0 auto;
- background: rgba(255, 255, 255, 0.05);
- background-filter: blur(5px);
- padding: 2rem;
- border: 1px solid var(--vidro);
- border-radius: 16px;
-}
 
-.campo-form {
-  width: 100%;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
-  color: var(--claro);
-  border: 1px solid var(--vidro);
-  outline: none;
-}
+.icons-contatos {
+ display: flex;
+ justify-content: center;
+ align-items: center;
 
-.grupo-form {
-margin-bottom: 1.5rem;
-}
-
-.botao-form {
-    color: var(--claro);
-    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 8px;
     cursor: pointer;
-    font-weigth: bold;
-    width: 100%;
+    gap: 50px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
 
+    a {
+      text-decoration: none;
+    }  
+
+    h3 {
+      font-size: 1.1rem;
+      margin: 0.3rem 0 0.2rem;
+      color: var(--claro);
+    }
+
+    p {
+      font-size: 1.1rem;
+      font-weight: 200;
+      color: #444446;
+      opacity: 0.8;
+    }
 }
 
+.icons-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icons-links:hover {
+    transform: scale(1.08);
+}
+
+.icon-circle {
+    background-color:rgba(29, 13, 40, 0.88);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  width: 100%;
+  background-color: #444446;
+    color: var(--claro);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
 /* Contatos */
