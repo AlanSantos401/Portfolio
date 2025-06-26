@@ -122,9 +122,10 @@ body.modal-aberto {
   a {
     text-decoration: none;
   }
+}
 
-  button {
-  background-color: transparent;
+.button {
+    background-color: transparent;
      border: 1px solid var(--secundaria);
      color: white;
      padding: 8px 26px;
@@ -135,11 +136,10 @@ body.modal-aberto {
      transition: transform 0.2s ease-in-out;
   }
 
-  button:hover {
+  .button:hover {
     background-color: var(--secundaria);
     transform: scale(1.08);
   }
-}
 
 
 .animar-esquerda {
