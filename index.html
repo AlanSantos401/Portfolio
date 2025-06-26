@@ -98,7 +98,7 @@
 
       <div class="card-projetos">
         <div class="card-projeto">
-          <img src="./assents/Captura de tela 2025-05-30 143604.png" alt="Calculadora IMC">
+          <img src="./assents/Captura de tela 2025-05-30 143604.png" alt="Dev Cine">
           <div class="overlay">
             <h3>DevCine</h3>
             <div class="icons">
@@ -113,8 +113,8 @@
         <div id="modal-projeto" class="modal">
           <div class="modal-content">
             <span class="fechar" onclick="fecharModal()">&times;</span>
-            <h2>Previsão do Tempo</h2>
-            <p>O projeto "Previsão do Tempo" é uma aplicação web desenvolvida em React...</p>
+            <h2>Dev Cine</h2>
+            <p>O projeto "Dev Cine" é uma aplicação web desenvolvida em React...</p>
 
             <h3>Principais funcionalidades:</h3>
             <ul>
@@ -132,14 +132,14 @@
             </ul>
             <div class="links-github">
               <img src="./assents/Captura de tela 2025-05-30 143604.png" alt="">
-              <a href="">Ver Projeto</a>
+              <a href="https://github.com/AlanSantos401/DevCine">Ver Projeto</a>
             </div>
           </div>
         </div>
 
         <div class="card-projetos">
           <div class="card-projeto">
-            <img src="./assents/Captura de tela 2025-05-30 143604.png" alt="Calculadora IMC">
+            <img src="./assents/Captura de tela 2025-05-30 143604.png" alt="Dev Cine">
             <div class="overlay">
               <h3>DevCine</h3>
               <div class="icons">
@@ -154,8 +154,8 @@
           <div id="modal-projeto" class="modal">
             <div class="modal-content">
               <span class="fechar" onclick="fecharModal()">&times;</span>
-              <h2>Previsão do Tempo</h2>
-              <p>O projeto "Previsão do Tempo" é uma aplicação web desenvolvida em React...</p>
+              <h2>Dev Cine</h2>
+              <p>O projeto "Dev Cine" é uma aplicação web desenvolvida em React...</p>
 
               <h3>Principais funcionalidades:</h3>
               <ul>
@@ -173,19 +173,11 @@
               </ul>
               <div class="links-github">
                 <img src="./assents/Captura de tela 2025-05-30 143604.png" alt="">
-                <a href="">Ver Projeto</a>
+                <a href="https://github.com/AlanSantos401/DevCine">Ver Projeto</a>
               </div>
             </div>
           </div>
       </div>
-
-
-
-
-
-
-
-
     </div>
   </section>
 
@@ -203,44 +195,6 @@
   </section>
 
 </body>
-<script>
-  const links = document.querySelectorAll(".menu-link");
-  const sections = document.querySelectorAll("main, section");
-
-  function ativarLinkNaScroll() {
-    let scrollY = window.scrollY;
-
-    sections.forEach(sec => {
-      const top = sec.offsetTop - 100;
-      const height = sec.offsetHeight;
-      const id = sec.getAttribute("id");
-
-      if (scrollY >= top && scrollY < top + height) {
-        links.forEach(link => {
-          link.classList.remove("ativo");
-          if (link.getAttribute("href") === `#${id}`) {
-            link.classList.add("ativo");
-          }
-        });
-      }
-    });
-  }
-
-  window.addEventListener("scroll", ativarLinkNaScroll);
-
-  function abrirModal() {
-    document.getElementById("modal-projeto").style.display = "block";
-    document.body.classList.add("modal-aberto");
-  }
-
-  function fecharModal() {
-    document.getElementById("modal-projeto").style.display = "none";
-    document.body.classList.remove("modal-aberto");
-  }
-
-
-
-
-</script>
+<script src="./scripts.js"></script>
 
 </html>
