@@ -124,7 +124,7 @@ body.modal-aberto {
   }
 }
 
-.button {
+.button1 {
     background-color: transparent;
      border: 1px solid var(--secundaria);
      color: white;
@@ -136,7 +136,7 @@ body.modal-aberto {
      transition: transform 0.2s ease-in-out;
   }
 
-  .button:hover {
+  .button1:hover {
     background-color: var(--secundaria);
     transform: scale(1.08);
   }
