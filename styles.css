@@ -17,6 +17,7 @@ html {
     --maisescuro: #0a0f1c;
     --claro: #e2e8f0;
     --vidro: rgba(255, 255, 255, 0.1);
+    --roxoicons:#7452ad;
 }
 
 
@@ -229,7 +230,7 @@ body.modal-aberto {
   color: var(--secundaria);
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 
@@ -267,12 +268,12 @@ body.modal-aberto {
   justify-content: center;
 
   i {
-     color:var(--secundaria);
+     color:var(--roxoicons);
      font-size: 4rem;
   }
 
   span {
-    color:var(--secundaria);
+    color:var(--roxoicons);
     font-size: 1.5rem;
   }
 }
@@ -363,7 +364,7 @@ h2 {
 }
 
 .overlay h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -372,12 +373,13 @@ h2 {
   display: flex;
   gap: 8px;
   margin-bottom: 15px;
+
+ i {
+     color:var(--roxoicons);
+     font-size: 1.6rem;
+  }
 }
 
-.icons img {
-  width: 30px;
-  height: 30px;
-}
 
 .btn-ver {
   border: 1px solid var(--secundaria);
