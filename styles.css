@@ -1019,15 +1019,16 @@ h2 {
 }
 
 .icons-contatos {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     cursor: pointer;
     gap: 50px;
 
     img {
-      width: 40px;
-      height: 40px;
+      width: 20px;
+      height: 20px;
     }
 
     a {
@@ -1035,13 +1036,13 @@ h2 {
     }  
 
     h3 {
-      font-size: 1.1rem;
+      font-size: 1rem;
       margin: 0.3rem 0 0.2rem;
       color: var(--claro);
     }
 
     p {
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 200;
       color: #444446;
       opacity: 0.8;
@@ -1061,8 +1062,8 @@ h2 {
 
 .icon-circle {
     background-color:rgba(29, 13, 40, 0.88);
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     align-items: center;
