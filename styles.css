@@ -811,16 +811,20 @@ h2 {
 
 .container-projetos {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     gap: 40px;
     padding: 20px;
 }
 
 .card-projeto {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 400px;
-    height: 300px;
+    width: 320px;
+    height: 280px;
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.4);
@@ -831,6 +835,9 @@ h2 {
 
 .card-projetos {
     display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
 }
 
