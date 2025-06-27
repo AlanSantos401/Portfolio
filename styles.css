@@ -919,7 +919,7 @@ h2 {
     margin: 5% auto;
     padding: 20px;
     border-radius: 12px;
-    width: 80%;
+    width: 90%;
     max-width: 1000px;
     font-family: 'Poppins', sans-serif;
     height: 80vh; 
@@ -960,7 +960,7 @@ h2 {
     margin-top: 3rem;
 
     img {
-      width: 500px;
+      width: 300px;
     }
 
     a {
