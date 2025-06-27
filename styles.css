@@ -782,12 +782,12 @@ footer {
 
     i {
       color:var(--roxoicons);
-      font-size: 3rem;
+      font-size: 2.8rem;
     }
 
     span {
       color:var(--roxoicons);
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
 }
 
