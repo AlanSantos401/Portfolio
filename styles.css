@@ -1004,7 +1004,7 @@ h2 {
 
 /* Contatos */
 .contatos {
-    height: 80vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
