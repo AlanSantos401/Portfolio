@@ -561,6 +561,12 @@ footer {
 }
 /* Contatos */
 
+@media (max-width: 860px ) {
+
+
+
+}
+
 @media (max-width: 460px) {
 /* Header */
 .navegacao {
@@ -1023,7 +1029,7 @@ h2 {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    gap: 30px;
+    gap: 20px 60px;
 
     img {
       width: 30px;
