@@ -561,7 +561,7 @@ footer {
 }
 /* Contatos */
 
-@media (max-width: 860px) {
+@media (max-width: 460px) {
 /* Header */
 .navegacao {
     position: fixed;
