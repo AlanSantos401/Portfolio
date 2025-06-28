@@ -790,7 +790,6 @@ footer {
       font-size: 1.3rem;
     }
 }
-
 /* Habilidades */
 
 /* Projetos */
@@ -798,7 +797,7 @@ h2 {
     text-align: center;
     font-size: 2.5rem;
     color: var(--secundaria);
-    margin: 50px 0 0 0 ;
+    margin: 25px 0 0 0 ;
 }
 
 .projetos {
@@ -1005,7 +1004,7 @@ h2 {
 
 /* Contatos */
 .contatos {
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1081,7 +1080,4 @@ footer {
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
 }
 /* Contatos */
-
- 
-
 }
