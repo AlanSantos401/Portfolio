@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    background-color:rgb(9, 16, 29);
+    background-color:rgb(4, 2, 8);
     color: var(--claro);
 }
 
@@ -88,6 +88,7 @@ body.modal-aberto {
     overflow: hidden;
 }
 
+
 .text {
     display: flex;
     flex-direction: column;
@@ -96,10 +97,14 @@ body.modal-aberto {
     width: 50%;
     height: 100vh;
     font-size: 2.5rem;
+    background-image: url('./assets/background.jpg');
+    background-size: cover;      /* cobre todo o espaço da div */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat;
 
     span {
         color: var(--secundaria);
-    }
+    } 
 }
 
 .curriculo-contatos {
@@ -147,7 +152,7 @@ body.modal-aberto {
 
     video {
        width: 100%;
-       height: 100%;
+       height: 105%;
        object-fit: cover;
     }
 }
