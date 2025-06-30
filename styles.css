@@ -1426,9 +1426,6 @@ h2 {
   transition: opacity 0.3s ease;
   z-index: 2;
 
-  img {
-    width: 30px;
-  }
 }
 
 .card-projeto .overlay {
