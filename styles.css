@@ -332,6 +332,18 @@ h2 {
     object-fit: cover;
 }
 
+.premio {
+  position: absolute;
+  top: 10px;
+  right: 10px; 
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
 .card-projeto .overlay {
     position: absolute;
     inset: 0;
@@ -870,6 +882,18 @@ h2 {
     object-fit: cover;
 }
 
+.premio {
+  position: absolute;
+  top: 10px;
+  right: 10px; 
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
 .card-projeto .overlay {
     position: absolute;
     inset: 0;
@@ -1390,6 +1414,21 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.premio {
+  position: absolute;
+  top: 10px;
+  right: 10px; 
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+
+  img {
+    width: 30px;
+  }
 }
 
 .card-projeto .overlay {
