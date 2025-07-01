@@ -141,7 +141,7 @@ body.modal-aberto {
 
 .animar-frente {
     opacity: 0;
-    animation: aparecerFrente 1s ease-out forwards;
+    animation: aparecerFrente 0.5s ease-out forwards;
 }
 @keyframes aparecerFrente {
     to {
