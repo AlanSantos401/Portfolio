@@ -359,7 +359,7 @@ h2 {
     width: 400px;
     height: 300px;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 25px;
     background-color: #000;
     transition: transform 0.3s ease;
     box-shadow: 0 0 20px rgba(124, 58, 237, 0.6);
@@ -950,7 +950,7 @@ h2 {
     width: 350px;
     height: 280px;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 25px;
     background-color: #000;
     transition: transform 0.3s ease;
     box-shadow: 0 0 20px rgba(124, 58, 237, 0.6);
@@ -1355,7 +1355,7 @@ footer {
 
 .sobre-titulo {
     font-size: 2.5rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 .sobre-text {
