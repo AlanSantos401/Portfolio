@@ -31,3 +31,8 @@
     document.getElementById(id).style.display = "none";
     document.body.classList.remove("modal-aberto");
   }
+
+  const video = document.getElementById('meuVideo');
+  video.addEventListener('canplay', () => {
+    video.classList.add('animar-frente');
+  });
