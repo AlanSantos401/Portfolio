@@ -139,6 +139,16 @@ body.modal-aberto {
     animation-delay: 0.5s
 }
 
+.animar-frente {
+    opacity: 0;
+    animation: aparecerFrente 1s ease-out forwards;
+}
+@keyframes aparecerFrente {
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes aparecerEsquerda {
     to {
       opacity: 1;
@@ -456,7 +466,7 @@ h2 {
     gap: 1rem;
     margin-top: 3rem;
 
-    img {
+    video {
       width: 500px;
     }
 
@@ -683,6 +693,16 @@ footer {
     transform: translateX(-200px);
     animation: aparecerEsquerda 1s ease-out forwards;
     animation-delay: 0.5s
+}
+
+.animar-frente {
+    opacity: 0;
+    animation: aparecerFrente 1s ease-out forwards;
+}
+@keyframes aparecerFrente {
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes aparecerEsquerda {
@@ -1006,7 +1026,7 @@ h2 {
     gap: 1rem;
     margin-top: 3rem;
 
-    img {
+    video {
       width: 500px;
     }
 
@@ -1235,6 +1255,16 @@ footer {
     transform: translateX(-200px);
     animation: aparecerEsquerda 1s ease-out forwards;
     animation-delay: 0.5s
+}
+
+.animar-frente {
+    opacity: 0;
+    animation: aparecerFrente 1s ease-out forwards;
+}
+@keyframes aparecerFrente {
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes aparecerEsquerda {
@@ -1540,7 +1570,7 @@ h2 {
     gap: 1rem;
     margin-top: 3rem;
 
-    img {
+    video {
       width: 300px;
     }
 

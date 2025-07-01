@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
   <link rel="stylesheet" href="styles.css">
 
-  <title>Portfolio</title>
+  <title>Alan dos Santos</title>
 
 </head>
 
@@ -33,7 +33,7 @@
   </nav>
 
   <main id="inicio" class="cabecalho">
-    <div class="text">
+    <div class="text animar-frente">
       <h1 class="animar-esquerda">Olá<span>.</span></h1>
       <p class="animar-esquerda">Me chamo Alan</p>
       <h3 class="animar-esquerda">Desenvolvedor Full-Stack</h3>
@@ -47,7 +47,7 @@
       </div>
 
     </div>
-    <div class="fundo"> <video src="./assets/video4.mp4" autoplay muted loop></video> </div>
+    <div class="fundo animar-frente"> <video src="./video/video4.mp4" autoplay muted loop></video> </div>
   </main>
 
   <div class="divisoria"></div>
@@ -132,20 +132,19 @@
     <h2>Projetos</h2>
     <div class="container-projetos">
       <div class="card-projetos">
-
         <div class="card-projeto">
           <div class="premio">
             <img src="./assets/premio.png" alt="Premio">
           </div>
-          <img src="./assets/Captura de tela 2025-05-30 143604.png" alt="Dev Cine">
+          <img src="./assets/jogo-da-cobrinha.png" alt="Dev Cine">
           <div class="overlay">
-            <h3>DevCine</h3>
+            <h3>Jogo da Cobrinha</h3>
             <div class="icons">
               <i class="devicon-html5-plain"></i>
               <i class="devicon-css3-plain"></i>
               <i class="devicon-javascript-plain"></i>
             </div>
-            <a class="btn-ver" onclick="abrirModal()">Ver mais</a>
+            <a class="btn-ver" onclick="abrirModal('jogo-da-cobrinha')">Ver mais</a>
           </div>
         </div>
 
@@ -158,19 +157,45 @@
               <i class="devicon-css3-plain"></i>
               <i class="devicon-javascript-plain"></i>
             </div>
-            <a class="btn-ver" onclick="abrirModal()">Ver mais</a>
+            <a class="btn-ver" onclick="abrirModal('modal-projeto1')">Ver mais</a>
           </div>
         </div>
-
       </div>
     </div>
 
-    <div id="modal-projeto" class="modal">
+    <div id="jogo-da-cobrinha" class="modal">
       <div class="modal-content">
-        <span class="fechar" onclick="fecharModal()">&times;</span>
-        <h2>Dev Cine</h2>
-        <p>O projeto "Dev Cine" é uma aplicação web desenvolvida em React...</p>
+        <span class="fechar" onclick="fecharModal('jogo-da-cobrinha')">&times;</span>
+        <h2>Jogo da Cobrinha</h2>
+        <p>O projeto "Jogo da Cobrinha" é uma aplicação web desenvolvida com HTML, CSS e JavaScript, inspirada no
+          clássico jogo dos celulares antigos. Criado com o objetivo de proporcionar diversão nos momentos de lazer, o
+          projeto foi destaque e recebeu o prêmio "Baby Dev - Projeto do Mês (Abril)" no curso DevClub.</p>
         <h3>Principais funcionalidades:</h3>
+        <ul>
+          <li>Controle do movimento da cobrinha via teclado e botões mobile.</li>
+          <li>Sistema de recorde com armazenamento local (localStorage).</li>
+          <li>Feedback visual ao perder (mensagem de game over).</li>
+          <li>Pontuação em tempo real.</li>
+        </ul>
+        <h3>Ferramentas utilizadas:</h3>
+        <ul>
+          <li><strong>Html:5:</strong> Estruturação da interface do jogo.</li>
+          <li><strong>Css:</strong> Estilização visual e responsividade.</li>
+          <li><strong>JavaScript:</strong> Lógica do jogo, controle da cobrinha, geração de alimentos, detecção de
+            colisões e interação com o usuário.</li>
+        </ul>
+        <div class="links-github">
+          <video src="./video//jogo-da-cobrinha.mp4" controls> </video>
+          <a href="https://alansantos401.github.io/Jogo-Cobrinha/" target="_blank" rel="noopener noreferrer">Ver
+            Projeto</a>
+        </div>
+      </div>
+    </div>
+    <div id="modal-projeto1" class="modal">
+      <div class="modal-content">
+        <span class="fechar" onclick="fecharModal('modal-projeto1')">&times;</span>
+        <h2>Dev Cine</h2>
+        <p>O projeto </h3>
         <ul>
           <li>Exibição da previsão do tempo atual para uma cidade inserida pelo usuário.</li>
           <li>Informações detalhadas, como temperatura, umidade e condições climáticas.</li>
@@ -184,7 +209,7 @@
           <li><strong>gh-pages:</strong> deploy no GitHub.</li>
         </ul>
         <div class="links-github">
-          <img src="./assets/Captura de tela 2025-05-30 143604.png" alt="">
+          <video src="./video/jogo-da-cobrinha.mp4" controls> </video>
           <a href="https://github.com/AlanSantos401/DevCine">Ver Projeto</a>
         </div>
       </div>

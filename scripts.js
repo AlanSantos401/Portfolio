@@ -22,12 +22,12 @@
 
   window.addEventListener("scroll", ativarLinkNaScroll);
 
-  function abrirModal() {
-    document.getElementById("modal-projeto").style.display = "block";
+  function abrirModal(id) {
+    document.getElementById(id).style.display = "block";
     document.body.classList.add("modal-aberto");
   }
 
-  function fecharModal() {
-    document.getElementById("modal-projeto").style.display = "none";
+  function fecharModal(id) {
+    document.getElementById(id).style.display = "none";
     document.body.classList.remove("modal-aberto");
   }
