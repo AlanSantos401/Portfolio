@@ -32,7 +32,9 @@
     document.body.classList.remove("modal-aberto");
   }
 
-  const video = document.getElementById('meuVideo');
+    const video = document.getElementById('meuVideo');
+  const overlay = document.getElementById('videoOverlay');
+
   video.addEventListener('canplay', () => {
-    video.classList.add('animar-frente');
+    overlay.style.animation = 'fadeOut 1.5s ease-out forwards';
   });
