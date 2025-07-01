@@ -45,7 +45,7 @@
 
     <div class="fundo">
       <video id="meuVideo" autoplay muted loop playsinline preload="auto">
-        <source src="./video/video4.mp4" type="video/mp4" />
+        <source src="./videos/video4.mp4" type="video/mp4" />
       </video>
       <div class="video-overlay" id="videoOverlay"></div>
     </div>
@@ -150,15 +150,15 @@
         </div>
 
         <div class="card-projeto">
-          <img src="./assets/Captura de tela 2025-05-30 143604.png" alt="Dev Cine">
+          <img src="./assets/devcine.png" alt="Dev Cine">
           <div class="overlay">
             <h3>DevCine</h3>
             <div class="icons">
-              <i class="devicon-html5-plain"></i>
-              <i class="devicon-css3-plain"></i>
+              <i class="devicon-react-original"></i>
               <i class="devicon-javascript-plain"></i>
+              <i class="devicon-nodejs-plain"></i>
             </div>
-            <a class="btn-ver" onclick="abrirModal('modal-projeto1')">Ver mais</a>
+            <a class="btn-ver" onclick="abrirModal('devcine')">Ver mais</a>
           </div>
         </div>
       </div>
@@ -186,31 +186,45 @@
             colisões e interação com o usuário.</li>
         </ul>
         <div class="links-github">
-          <video src="./video//jogo-da-cobrinha.mp4" controls> </video>
-          <a href="https://alansantos401.github.io/Jogo-Cobrinha/" target="_blank" rel="noopener noreferrer">Ver
+          <video src="./videos/jogo-da-cobrinha.mp4" controls> </video>
+          <a href="https://github.com/AlanSantos401/Jogo-Cobrinha.git" target="_blank" rel="noopener noreferrer">Ver
             Projeto</a>
         </div>
       </div>
     </div>
-    <div id="modal-projeto1" class="modal">
+
+    <div id="devcine" class="modal">
       <div class="modal-content">
-        <span class="fechar" onclick="fecharModal('modal-projeto1')">&times;</span>
+        <span class="fechar" onclick="fecharModal('devcine')">&times;</span>
         <h2>Dev Cine</h2>
-        <p>O projeto </h3>
+        <p>DevCine é uma aplicação web interativa e moderna que permite aos usuários explorarem um catálogo de filmes,
+          séries e animes.<br> A plataforma exibe pôsteres, sinopses e dados principais das produções, oferecendo uma
+          navegação fluida e uma interface visual atrativa.
+          Ideal para quem deseja descobrir novos conteúdos ou manter um catálogo visual das suas obras favoritas.</p>
+        <br>
+        <h3>Principais funcionalidades:</h3>
         <ul>
-          <li>Exibição da previsão do tempo atual para uma cidade inserida pelo usuário.</li>
-          <li>Informações detalhadas, como temperatura, umidade e condições climáticas.</li>
-          <li>Atualização dinâmica com base na cidade fornecida.</li>
+          <li> Busca de filmes, séries e animes por nome.</li>
+          <li> Atualização dinâmica dos dados via API.</li>
+          <li> Página inicial com destaques ou lançamentos.</li>
+          <li> Layout responsivo para desktop e mobile..</li>
         </ul>
         <h3>Ferramentas utilizadas:</h3>
         <ul>
-          <li><strong>React:</strong> construção da interface.</li>
-          <li><strong>Axios:</strong> requisições HTTP.</li>
-          <li><strong>Vite:</strong> desenvolvimento rápido.</li>
-          <li><strong>gh-pages:</strong> deploy no GitHub.</li>
+          <ul>
+            <li><strong>React + Vite:</strong> Construção da interface com alta performance e modularidade no
+              desenvolvimento.</li>
+            <li><strong>Axios:</strong> Consumo de APIs externas para exibir dados de filmes, séries e animes.</li>
+            <li><strong>Styled-components:</strong> Estilização dos componentes com foco em responsividade e organização
+              do CSS.</li>
+            <li><strong>JavaScript:</strong> Lógica de aplicação, manipulação de dados e renderização dinâmica com
+              React.</li>
+            <li><strong>React Router (Route):</strong> Responsável pela navegação entre páginas como Home, Filmes,
+              Series e Animes.</li>
+          </ul>
         </ul>
         <div class="links-github">
-          <video src="./video/jogo-da-cobrinha.mp4" controls> </video>
+          <video src="./videos/devcine.mp4" controls> </video>
           <a href="https://github.com/AlanSantos401/DevCine">Ver Projeto</a>
         </div>
       </div>
