@@ -1261,6 +1261,7 @@ footer {
     opacity: 0;
     animation: aparecerFrente 1s ease-out forwards;
 }
+
 @keyframes aparecerFrente {
     to {
         opacity: 1;
