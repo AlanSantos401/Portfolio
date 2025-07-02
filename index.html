@@ -133,6 +133,7 @@
     <h2>Projetos</h2>
     <div class="container-projetos">
       <div class="card-projetos">
+
         <div class="card-projeto">
           <div class="premio">
             <img src="./assets/premio.png" alt="Premio">
@@ -174,6 +175,7 @@
             <a class="btn-ver" onclick="abrirModal('primeburguer')">Ver mais</a>
           </div>
         </div>
+
         <div class="card-projeto">
           <img src="./assets/projeto-mario.png" alt="Projeto Mario">
           <div class="overlay">
@@ -187,6 +189,18 @@
           </div>
         </div>
 
+        <div class="card-projeto">
+          <img src="./assets/conversor-moedas.png" alt="Conversor de Moedas">
+          <div class="overlay">
+            <h3>Conversor de Moedas</h3>
+            <div class="icons">
+              <i class="devicon-html5-plain"></i>
+              <i class="devicon-css3-plain"></i>
+              <i class="devicon-javascript-plain"></i>
+            </div>
+            <a class="btn-ver" onclick="abrirModal('conversormoedas')">Ver mais</a>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -242,7 +256,6 @@
           <li> Layout responsivo para desktop e mobile..</li>
         </ul>
         <h3>Ferramentas utilizadas:</h3>
-        <ul>
           <ul>
             <li><strong>React + Vite:</strong> Construção da interface com alta performance e modularidade no
               desenvolvimento.</li>
@@ -254,7 +267,6 @@
             <li><strong>React Router (Route):</strong> Responsável pela navegação entre páginas como Home, Filmes,
               Series e Animes.</li>
           </ul>
-        </ul>
         <div>
           <h3>Repositório:</h3>
           <a class="repositorio" href="https://github.com/AlanSantos401/DevCine.git" target="_blank"
@@ -289,7 +301,6 @@
           <li>Estrutura pronta para autenticação de administrador (em desenvolvimento/expansão futura).</li>
         </ul>
         <h3>Ferramentas utilizadas:</h3>
-        <ul>
           <ul>
             <li><strong>React + Vite:</strong> Construção da interface com alta performance e modularidade no
               desenvolvimento.</li>
@@ -300,28 +311,27 @@
               React.</li>
             <li><strong>Node.js + Express:</strong> Criação da API REST para gerenciamento de produtos.</li>
             <li><strong>SQLite:</strong> Banco de dados leve e eficiente para persistência local.</li>
-          </ul>
-        </ul>
+            </ul>
         <h3>Repositórios:</h3>
         <div>
-        Front-End:
-        <a class="repositorio" href="https://github.com/AlanSantos401/PrimeBurguer-FrontEnd.git" target="_blank"
-          rel="noopener noreferrer">
-          https://github.com/AlanSantos401/PrimeBurguer-FrontEnd.git
-        </a>
-        <br>
-        Back-End:
-        <a class="repositorio" href="https://github.com/AlanSantos401/PrimeBurguer-BackEnd.git" target="_blank"
-          rel="noopener noreferrer">
-          https://github.com/AlanSantos401/PrimeBurguer-BackEnd.git
-        </a>
+          Front-End:
+          <a class="repositorio" href="https://github.com/AlanSantos401/PrimeBurguer-FrontEnd.git" target="_blank"
+            rel="noopener noreferrer">
+            https://github.com/AlanSantos401/PrimeBurguer-FrontEnd.git
+          </a>
+          <br>
+          Back-End:
+          <a class="repositorio" href="https://github.com/AlanSantos401/PrimeBurguer-BackEnd.git" target="_blank"
+            rel="noopener noreferrer">
+            https://github.com/AlanSantos401/PrimeBurguer-BackEnd.git
+          </a>
 
+        </div>
+        <div class="links-github">
+          <video src="./videos/primeburguer.mp4" controls> </video>
+          <a href="https://github.com/AlanSantos401/PrimeBurguer-FrontEnd.git">Ver Projeto</a>
+        </div>
       </div>
-      <div class="links-github">
-        <video src="./videos/primeburguer.mp4" controls> </video>
-        <a href="https://github.com/AlanSantos401/PrimeBurguer-FrontEnd.git">Ver Projeto</a>
-      </div>
-    </div>
     </div>
 
     <div id="projetosupermario" class="modal">
@@ -352,6 +362,39 @@
         <div class="links-github">
           <video src="./videos/super-mario.mp4" controls> </video>
           <a href="https://alansantos401.github.io/Projeto-Mario-1/" target="_blank" rel="noopener noreferrer">Ver
+            Projeto</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="conversormoedas" class="modal">
+      <div class="modal-content">
+        <span class="fechar" onclick="fecharModal('conversormoedas')">&times;</span>
+        <h2>Conversor de Moedas</h2>
+        <p>O Conversor de Moedas é uma aplicação web desenvolvida para facilitar a conversão entre diferentes moedas de
+          forma rápida e prática. Com uma interface simples e responsiva, o projeto permite que o usuário selecione
+          moedas de origem e destino e visualize o valor convertido com base nas taxas de câmbio mais recentes.</p>
+        <h3>Principais funcionalidades:</h3>
+        <ul>
+          <li>Conversão em tempo real ao digitar um valor.</li>
+          <li>Atualização automática com a taxa de câmbio atual.</li>
+          <li>Seleção de moeda de origem e destino via dropdown.</li>
+          <li>Interface amigável e compatível com dispositivos móveis.</li>
+        </ul>
+        <h3>Ferramentas utilizadas:</h3>
+        <ul>
+          <li><strong>Html:5:</strong> Estruturação da interface do conversor.</li>
+          <li><strong>Css:</strong> Estilização visual e responsividade.</li>
+          <li><strong>JavaScript:</strong> Lógica de aplicação, manipulação de dados e renderização dinâmica.</li>
+        </ul>
+        <div>
+          <h3>Repositório:</h3>
+          <a class="repositorio" href="https://github.com/AlanSantos401/Conversor-Moedas.git" target="_blank"
+            rel="noopener noreferrer">https://github.com/AlanSantos401/Conversor-Moedas.git</a>
+        </div>
+        <div class="links-github">
+          <video src="./videos/conversor-moedas.mp4" controls> </video>
+          <a href="https://alansantos401.github.io/Conversor-Moedas/" target="_blank" rel="noopener noreferrer">Ver
             Projeto</a>
         </div>
       </div>
