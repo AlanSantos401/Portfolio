@@ -152,7 +152,7 @@
         <div class="card-projeto">
           <img src="./assets/devcine.png" alt="Dev Cine">
           <div class="overlay">
-            <h3>DevCine</h3>
+            <h3>Dev Cine</h3>
             <div class="icons">
               <i class="devicon-react-original"></i>
               <i class="devicon-javascript-plain"></i>
@@ -161,6 +161,33 @@
             <a class="btn-ver" onclick="abrirModal('devcine')">Ver mais</a>
           </div>
         </div>
+
+        <div class="card-projeto">
+          <img src="./assets/primeburguer.png" alt="Prime Burguer">
+          <div class="overlay">
+            <h3>Prime Burguer</h3>
+            <div class="icons">
+              <i class="devicon-react-original"></i>
+              <i class="devicon-javascript-plain"></i>
+              <i class="devicon-nodejs-plain"></i>
+            </div>
+            <a class="btn-ver" onclick="abrirModal('primeburguer')">Ver mais</a>
+          </div>
+        </div>
+        <div class="card-projeto">
+          <img src="./assets/projeto-mario.png" alt="Projeto Mario">
+          <div class="overlay">
+            <h3>Projeto Super Mario</h3>
+            <div class="icons">
+              <i class="devicon-html5-plain"></i>
+              <i class="devicon-css3-plain"></i>
+              <i class="devicon-javascript-plain"></i>
+            </div>
+            <a class="btn-ver" onclick="abrirModal('projetosupermario')">Ver mais</a>
+          </div>
+        </div>
+
+
       </div>
     </div>
 
@@ -185,9 +212,14 @@
           <li><strong>JavaScript:</strong> Lógica do jogo, controle da cobrinha, geração de alimentos, detecção de
             colisões e interação com o usuário.</li>
         </ul>
+        <div>
+          <h3>Repositório:</h3>
+          <a class="repositorio" href="https://github.com/AlanSantos401/Jogo-Cobrinha.git" target="_blank"
+            rel="noopener noreferrer">https://github.com/AlanSantos401/Jogo-Cobrinha.git</a>
+        </div>
         <div class="links-github">
           <video src="./videos/jogo-da-cobrinha.mp4" controls> </video>
-          <a href="https://github.com/AlanSantos401/Jogo-Cobrinha.git" target="_blank" rel="noopener noreferrer">Ver
+          <a href="https://alansantos401.github.io/Jogo-Cobrinha/" target="_blank" rel="noopener noreferrer">Ver
             Projeto</a>
         </div>
       </div>
@@ -223,12 +255,108 @@
               Series e Animes.</li>
           </ul>
         </ul>
+        <div>
+          <h3>Repositório:</h3>
+          <a class="repositorio" href="https://github.com/AlanSantos401/DevCine.git" target="_blank"
+            rel="noopener noreferrer">https://github.com/AlanSantos401/DevCine.git</a>
+        </div>
         <div class="links-github">
           <video src="./videos/devcine.mp4" controls> </video>
-          <a href="https://github.com/AlanSantos401/DevCine">Ver Projeto</a>
+          <a href="https://github.com/AlanSantos401/DevCine" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
         </div>
       </div>
     </div>
+
+    <div id="primeburguer" class="modal">
+      <div class="modal-content">
+        <span class="fechar" onclick="fecharModal('primeburguer')">&times;</span>
+        <h2>Prime Burguer</h2>
+        <p>O Prime Burguer é uma aplicação web moderna e interativa desenvolvida para facilitar a experiência de
+          navegação e pedido de hambúrgueres artesanais. A plataforma permite ao usuário explorar o cardápio, montar seu
+          pedido, adicionar ao carrinho e simular a finalização da compra de forma rápida e intuitiva.<br>
+          <br>
+          A aplicação é dividida em dois repositórios: um para a interface (front-end) e outro para a API (back-end),
+          permitindo maior escalabilidade e organização do projeto.
+        </p>
+        <br>
+        <h3>Principais funcionalidades:</h3>
+        <ul>
+          <li> Listagem de hambúrgueres, acompanhamentos e bebidas com imagem, nome, descrição e preço.</li>
+          <li> Produtos divididos por categorias.</li>
+          <li> Visualização dos itens selecionados com valor total dinâmico.</li>
+          <li> Interface clara com informações do pedido</li>
+          <li>Cadastro, edição e exclusão de produtos.</li>
+          <li>Estrutura pronta para autenticação de administrador (em desenvolvimento/expansão futura).</li>
+        </ul>
+        <h3>Ferramentas utilizadas:</h3>
+        <ul>
+          <ul>
+            <li><strong>React + Vite:</strong> Construção da interface com alta performance e modularidade no
+              desenvolvimento.</li>
+            <li><strong>Axios:</strong> Consumo de APIs externas para exibir dados de filmes, séries e animes.</li>
+            <li><strong>Styled-components:</strong> Estilização dos componentes com foco em responsividade e organização
+              do CSS.</li>
+            <li><strong>JavaScript:</strong> Lógica de aplicação, manipulação de dados e renderização dinâmica com
+              React.</li>
+            <li><strong>Node.js + Express:</strong> Criação da API REST para gerenciamento de produtos.</li>
+            <li><strong>SQLite:</strong> Banco de dados leve e eficiente para persistência local.</li>
+          </ul>
+        </ul>
+        <h3>Repositórios:</h3>
+        <div>
+        Front-End:
+        <a class="repositorio" href="https://github.com/AlanSantos401/PrimeBurguer-FrontEnd.git" target="_blank"
+          rel="noopener noreferrer">
+          https://github.com/AlanSantos401/PrimeBurguer-FrontEnd.git
+        </a>
+        <br>
+        Back-End:
+        <a class="repositorio" href="https://github.com/AlanSantos401/PrimeBurguer-BackEnd.git" target="_blank"
+          rel="noopener noreferrer">
+          https://github.com/AlanSantos401/PrimeBurguer-BackEnd.git
+        </a>
+
+      </div>
+      <div class="links-github">
+        <video src="./videos/primeburguer.mp4" controls> </video>
+        <a href="https://github.com/AlanSantos401/PrimeBurguer-FrontEnd.git">Ver Projeto</a>
+      </div>
+    </div>
+    </div>
+
+    <div id="projetosupermario" class="modal">
+      <div class="modal-content">
+        <span class="fechar" onclick="fecharModal('projetosupermario')">&times;</span>
+        <h2>Projeto Super Mario</h2>
+        <p>Projeto Super Mario é uma aplicação web interativa inspirada no universo do clássico jogo Super Mario. A
+          plataforma
+          oferece uma experiência visual lúdica com ambientação nostálgica. Ideal para quem deseja
+          explorar um exemplo criativo de desenvolvimento front-end com foco em jogos 2D simples.</p>
+        <h3>Principais funcionalidades:</h3>
+        <ul>
+          <li>Simplicidade e facilidade de interação.</li>
+          <li>Resolver problemas indesejaveis.</li>
+          <li>Layout responsivo para diferentes dispositivos.</li>
+        </ul>
+        <h3>Ferramentas utilizadas:</h3>
+        <ul>
+          <li><strong>Html:5:</strong> Estruturação da interface do jogo.</li>
+          <li><strong>Css:</strong> Estilização visual e responsividade.</li>
+          <li><strong>JavaScript:</strong> Transição e movimentação da caixa fale conosco.</li>
+        </ul>
+        <div>
+          <h3>Repositório:</h3>
+          <a class="repositorio" href="https://github.com/AlanSantos401/Projeto-Mario-1.git" target="_blank"
+            rel="noopener noreferrer">https://github.com/AlanSantos401/Projeto-Mario-1.git</a>
+        </div>
+        <div class="links-github">
+          <video src="./videos/super-mario.mp4" controls> </video>
+          <a href="https://alansantos401.github.io/Projeto-Mario-1/" target="_blank" rel="noopener noreferrer">Ver
+            Projeto</a>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <div class="divisoria"></div>

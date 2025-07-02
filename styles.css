@@ -339,11 +339,10 @@ h2 {
 }
 
 .projetos {
-    height: 100vh;
+    padding: 60px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .container-projetos {
@@ -366,7 +365,8 @@ h2 {
 }
 
 .card-projetos {
-    display:flex;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 
@@ -489,6 +489,10 @@ h2 {
   margin-top: 20px;
   margin-bottom:20px;
   text-decoration: underline;
+}
+
+.repositorio {
+    color: var(--primaria);
 }
 
 .links-github {
