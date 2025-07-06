@@ -1470,311 +1470,304 @@ footer {
 /* Habilidades */
 
 /* Projetos */
-h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: var(--secundaria);
-    margin: 50px 0 0 0 ;
+ h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--secundaria);
+  margin: 50px 0 0 0;
 }
 
 .projetos {
-    padding: 30px 10px;
-    height: auto;
+  padding: 30px 10px;
+  margin-bottom: 80px;
+  height: auto;
 }
 
 .container-projetos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 40px;
-    padding: 20px;
-}
-
-.card-projeto {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 300px;
-    height: 175px;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
-    background-color: #000;
-    transition: transform 0.3s ease;
-    box-shadow: 0 0 20px rgba(124, 58, 237, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  padding-bottom: 60px; 
 }
 
 .card-projetos {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.card-projeto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 175px;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: #000;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.6);
 }
 
 .card-projeto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .premio {
   position: absolute;
   top: 10px;
-  right: 10px; 
+  right: 10px;
   font-weight: bold;
   padding: 6px 10px;
   border-radius: 6px;
   transition: opacity 0.3s ease;
   z-index: 2;
-
 }
 
 .card-projeto .overlay {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0,0,0,0.7);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .card-projeto:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .card-projeto:hover .overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
 .overlay h3 {
-    font-size: 1.7rem;
-    margin-bottom: 10px;
-    text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .icons {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 15px;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
 
-    i {
-      color:var(--roxoicons);
-      font-size: 1.6rem;
-    }
+.icons i {
+  color: var(--roxoicons);
+  font-size: 1.6rem;
 }
 
 .btn-ver {
-    border: 1px solid var(--secundaria);
-    color: white;
-    padding: 8px 16px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
+  border: 1px solid var(--secundaria);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .btn-ver:hover {
-    background-color: var(--secundaria);
-    transform: scale(1.08);
+  background-color: var(--secundaria);
+  transform: scale(1.08);
 }
 
 .modal {
-    display: none; 
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content {
-    background-color: #0e1a23;
-    color: #fff;
-    margin: 5% auto;
-    padding: 20px;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 1000px;
-    font-family: 'Poppins', sans-serif;
-    height: 80vh; 
-    overflow-y: auto;
+  background-color: #0e1a23;
+  color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 1000px;
+  font-family: 'Poppins', sans-serif;
+  height: 80vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
 
-    ul {
-      margin-left: 20px;
-    }
+.modal-content ul {
+  margin-left: 20px;
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 20px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 
 .fechar {
-    float: right;
-    font-size: 50px;
-    font-weight: bold;
-    color: var(--secundaria);
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out; 
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--secundaria);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 }
 
 .fechar:hover {
-    transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 .modal-content h2 {
-    font-size: 1.7rem;
-  color: #var(--secundaria);
+  font-size: 1.7rem;
+  color: var(--secundaria); 
   margin-top: 20px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .modal-content h3 {
   color: #fff;
   margin-top: 20px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   text-decoration: underline;
 }
 
 .repositorio {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 .links-github {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 3rem;
-
-    video {
-      width: 300px;
-    }
-
-    a {
-      border: 1px solid var(--secundaria);
-      color: white;
-      padding: 8px 16px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-      cursor: pointer;
-      transition: transform 0.2s ease-in-out;
-    }
-
-    a:hover {
-       background-color: var(--secundaria);
-       transform: scale(1.08);
-    }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
 }
 
-.modal-content::-webkit-scrollbar {
-    width: 8px;
+.links-github video {
+  width: 300px;
 }
 
-.modal-content::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 20px;
+.links-github a {
+  border: 1px solid var(--secundaria);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s ease-in-out;
+  cursor: pointer;
 }
 
-.modal-content::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.2); /* cor do "puxador" */
-    border-radius: 20px;
-    border: 2px solid transparent;
-    background-clip: padding-box;
+.links-github a:hover {
+  background-color: var(--secundaria);
+  transform: scale(1.08);
 }
 
-.modal-content {
-    scrollbar-width: thin;           
-    scrollbar-color: rgba(255,255,255,0.2) transparent;
-}
-/* Projetos */
+/*  Contatos */
 
-/* Contatos */
 .contatos {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contatos-titulos {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
 }
 
 .icons-contatos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    gap: 20px 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 20px 60px;
+}
 
-    img {
-      width: 30px;
-      height: 30px;
-    }
+.icons-contatos img {
+  width: 30px;
+  height: 30px;
+}
 
-    a {
-      text-decoration: none;
-    }  
+.icons-contatos a {
+  text-decoration: none;
+}
 
-    h3 {
-      font-size: 1rem;
-      margin: 0.3rem 0 0.2rem;
-      color: var(--claro);
-    }
+.icons-contatos h3 {
+  font-size: 1rem;
+  margin: 0.3rem 0 0.2rem;
+  color: var(--claro);
+}
 
-    p {
-      font-size: 1rem;
-      font-weight: 200;
-      color: #444446;
-      opacity: 0.8;
-    }
+.icons-contatos p {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #444446;
+  opacity: 0.8;
 }
 
 .icons-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
 }
 
 .icons-links:hover {
-    transform: scale(1.08);
+  transform: scale(1.08);
 }
 
 .icon-circle {
-    background-color:rgba(29, 13, 40, 0.88);
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0.75rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  background-color: rgba(29, 13, 40, 0.88);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    width: 100%;
-    background-color:rgba(29, 13, 40, 0.88);
-    color: var(--claro);
-    padding: 1.5rem 5rem 2rem 5rem;
-    text-align: center;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
-}
-/* Contatos */
+  width: 100%;
+  background-color: rgba(29, 13, 40, 0.88);
+  color: var(--claro);
+  padding: 1.5rem 5rem 2rem 5rem;
+  text-align: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
 }
