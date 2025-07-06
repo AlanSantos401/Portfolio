@@ -692,6 +692,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     padding: 6rem 2rem;
+    background-image: none;
     width: 100%;
     height: 50%;
     font-size: 2.5rem;
@@ -797,8 +798,8 @@ footer {
 }
 
 .sobre-titulo {
-    font-size: 2.5rem;
-    margin-top: 9rem;
+    font-size: 3rem;
+    margin-top: 8rem;
 }
 
 .sobre-text {
@@ -928,9 +929,9 @@ footer {
 /* Projetos */
 h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--secundaria);
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .projetos {
@@ -949,7 +950,7 @@ h2 {
 .card-projeto {
     position: relative;
     width: 350px;
-    height: 280px;
+    height: 270px;
     overflow: hidden;
     border-radius: 25px;
     background-color: #000;
@@ -1218,7 +1219,7 @@ footer {
 /* Contatos */
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
 /* Header */
 .navegacao {
     position: fixed;
@@ -1424,7 +1425,7 @@ footer {
 }
 
 .icon-custom {
-    font-size: 40px;
+    font-size: 35px;
     color: var(--secundaria); /* ou qualquer cor */
     transition: transform 0.3s ease;
 }
@@ -1458,12 +1459,12 @@ footer {
 
     i {
       color:var(--roxoicons);
-      font-size: 2.8rem;
+      font-size: 2.7rem;
     }
 
     span {
       color:var(--roxoicons);
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
 }
 /* Habilidades */
@@ -1473,7 +1474,7 @@ h2 {
     text-align: center;
     font-size: 2.5rem;
     color: var(--secundaria);
-    margin: 25px 0 0 0 ;
+    margin: 50px 0 0 0 ;
 }
 
 .projetos {
@@ -1496,7 +1497,7 @@ h2 {
     align-items: center;
     position: relative;
     width: 300px;
-    height: 220px;
+    height: 175px;
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.4);
@@ -1627,11 +1628,22 @@ h2 {
     transform: scale(1.15);
 }
 
+.modal-content h2 {
+    font-size: 1.7rem;
+  color: #var(--secundaria);
+  margin-top: 20px;
+  margin-bottom:20px;
+}
+
 .modal-content h3 {
   color: #fff;
   margin-top: 20px;
   margin-bottom:20px;
   text-decoration: underline;
+}
+
+.repositorio {
+    font-size: 0.8rem;
 }
 
 .links-github {
@@ -1689,7 +1701,7 @@ h2 {
 
 /* Contatos */
 .contatos {
-    height: 75vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1699,7 +1711,7 @@ h2 {
 .contatos-titulos {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .icons-contatos {
