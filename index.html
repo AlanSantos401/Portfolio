@@ -164,6 +164,19 @@
         </div>
 
         <div class="card-projeto">
+          <img src="./assets/Devbills.png" alt="DevBills">
+          <div class="overlay">
+            <h3>DevBills</h3>
+            <div class="icons">
+              <i class="devicon-react-original"></i>
+              <i class="devicon-typescript-plain"></i>
+              <i class="devicon-tailwindcss-plain"></i>
+            </div>
+            <a class="btn-ver" onclick="abrirModal('devbills')">Ver mais</a>
+          </div>
+        </div>
+
+        <div class="card-projeto">
           <img src="./assets/devcine.png" alt="Dev Cine">
           <div class="overlay">
             <h3>Dev Cine</h3>
@@ -203,7 +216,7 @@
         </div>
 
         <div class="card-projeto">
-          <img src="./assets/conversor-moedas.png" alt="Conversor de Moedas">
+          <img src="./assets/conversor-de-moedas.png" alt="Conversor de Moedas">
           <div class="overlay">
             <h3>Conversor de Moedas</h3>
             <div class="icons">
@@ -240,10 +253,10 @@
           projeto foi destaque e recebeu o prêmio "Baby Dev - Projeto do Mês (Abril)" no curso DevClub.</p>
         <h3>Principais funcionalidades:</h3>
         <ul>
-          <li>Controle do movimento da cobrinha via teclado e botões mobile.</li>
-          <li>Sistema de recorde com armazenamento local (localStorage).</li>
-          <li>Feedback visual ao perder (mensagem de game over).</li>
-          <li>Pontuação em tempo real.</li>
+          <li>🎯 Controle do movimento da cobrinha via teclado e botões mobile.</li>
+          <li>💾 Sistema de recorde com armazenamento local (localStorage).</li>
+          <li>💥 Feedback visual ao perder, com mensagem de Game Over.</li>
+          <li>🧮 Pontuação em tempo real durante o jogo.</li>
         </ul>
         <h3>Ferramentas utilizadas:</h3>
         <ul>
@@ -269,10 +282,10 @@
       <div class="modal-content">
         <span class="fechar" onclick="fecharModal('estdando_com_fe')">&times;</span>
         <h2>Estudando com Fé</h2>
-        <p>Plataforma interativa para estudo do cristianismo com apoio da Inteligência Artificial. <br/>
-          Estudando com Fé é uma plataforma voltada para o estudo do cristianismo, combinando tecnologia e fé.<br/>
+        <p>Plataforma interativa para estudo do cristianismo com apoio da Inteligência Artificial. <br />
+          Estudando com Fé é uma plataforma voltada para o estudo do cristianismo, combinando tecnologia e fé.<br />
           O projeto conta com um Agente Cristão inteligente, que responde dúvidas e auxilia nos estudos bíblicos, além
-          de oferecer um calendário devocional e um quiz interativo para testar seus conhecimentos.<br/>
+          de oferecer um calendário devocional e um quiz interativo para testar seus conhecimentos.<br />
           A plataforma é totalmente responsiva, funcionando perfeitamente em celulares, tablets e desktops.</p>
         <br>
         <h3>Principais funcionalidades:</h3>
@@ -303,6 +316,52 @@
       </div>
     </div>
 
+    <div id="devbills" class="modal">
+      <div class="modal-content">
+        <span class="fechar" onclick="fecharModal('devbills')">&times;</span>
+        <h2>DevBills</h2>
+        <p>Esta plataforma é uma solução integrada e intuitiva para gerenciar suas finanças pessoais ou empresariais com eficiência e segurança. Desenvolvida para atender desde usuários que desejam organizar suas despesas diárias até pequenas e médias empresas que precisam acompanhar receitas, despesas e fluxo de caixa em tempo real.<br>
+        <h3>Principais funcionalidades:</h3>
+        <ul>
+          <li> 🔐 Autenticação segura com Firebase para proteger seus dados.</li>
+          <li> 📊 Dashboard com resumo de receitas, despesas e saldo atualizado.</li>
+          <li> 📈🥧 Gráficos dinâmicos (barras e pizza) com visualização dos dados reais.</li>
+          <li> 📝 Cadastro e visualização de transações financeiras com facilidade.</li>
+          <li> 📱💻 Layout responsivo para desktop, tablet e mobile.</li>
+        </ul>
+        <h3>Ferramentas utilizadas:</h3>
+        <ul>
+          <li><strong>React + Vite:</strong> Interface moderna com alta performance e modularidade.</li>
+          <li><strong>Tailwind CSS:</strong> Estilização eficiente, com foco em responsividade e organização.</li>
+          <li><strong>TypeScript:</strong> Lógica de aplicação, manipulação de dados e renderização dinâmica com React e
+            APIs.</li>
+        </ul>
+
+        <div>
+          <h3>Repositório:</h3>
+          <div>
+            Front-End:
+            <a class="repositorio" href="https://github.com/AlanSantos401/DevBills-Front-end.git" target="_blank"
+              rel="noopener noreferrer">
+              https://github.com/AlanSantos401/DevBills-Front-end.git
+            </a>
+            <br>
+            Back-End:
+            <a class="repositorio" href="https://github.com/AlanSantos401/DevBills-Backend.git" target="_blank"
+              rel="noopener noreferrer">
+              https://github.com/AlanSantos401/DevBills-Backend.git
+            </a>
+          </div>
+          <div class="links-github">
+            <video src="./videos/DevBills.mp4" controls> </video>
+            <a href="https://github.com/AlanSantos401/DevBills-Front-end.git" target="_blank"
+              rel="noopener noreferrer">Ver
+              Projeto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="devcine" class="modal">
       <div class="modal-content">
         <span class="fechar" onclick="fecharModal('devcine')">&times;</span>
@@ -314,10 +373,10 @@
         <br>
         <h3>Principais funcionalidades:</h3>
         <ul>
-          <li> Busca de filmes, séries e animes por nome.</li>
-          <li> Atualização dinâmica dos dados via API.</li>
-          <li> Página inicial com destaques ou lançamentos.</li>
-          <li> Layout responsivo para desktop e mobile..</li>
+          <li> 🔍 Busca de filmes, séries e animes por nome.</li>
+          <li> 🔄 Atualização dinâmica dos dados via API.</li>
+          <li> 🌟 Página inicial com destaques e lançamentos atualizados.</li>
+          <li> 📱💻 Layout responsivo para desktop e mobile, com ótima experiência em todas as telas.</li>
         </ul>
         <h3>Ferramentas utilizadas:</h3>
         <ul>
@@ -348,7 +407,8 @@
         <span class="fechar" onclick="fecharModal('primeburguer')">&times;</span>
         <h2>Prime Burguer</h2>
         <p>O Prime Burguer é uma aplicação web moderna e interativa desenvolvida para facilitar a experiência de
-          navegação e pedido de hambúrgueres artesanais. A plataforma permite ao usuário explorar o cardápio, montar seu
+          navegação e pedido de hambúrgueres artesanais. A plataforma permite ao usuário explorar o cardápio, montar
+          seu
           pedido, adicionar ao carrinho e simular a finalização da compra de forma rápida e intuitiva.<br>
           <br>
           A aplicação é dividida em dois repositórios: um para a interface (front-end) e outro para a API (back-end),
@@ -357,12 +417,12 @@
         <br>
         <h3>Principais funcionalidades:</h3>
         <ul>
-          <li> Listagem de hambúrgueres, acompanhamentos e bebidas com imagem, nome, descrição e preço.</li>
-          <li> Produtos divididos por categorias.</li>
-          <li> Visualização dos itens selecionados com valor total dinâmico.</li>
-          <li> Interface clara com informações do pedido</li>
-          <li>Cadastro, edição e exclusão de produtos.</li>
-          <li>Estrutura pronta para autenticação de administrador (em desenvolvimento/expansão futura).</li>
+          <li>🖼️ Listagem de hambúrgueres, acompanhamentos e bebidas com imagem, nome, descrição e preço.</li>
+          <li> 🗂️ Produtos divididos por categorias.</li>
+          <li> 🛒 Visualização dos itens selecionados com valor total dinâmico.</li>
+          <li> 📋 Interface clara com informações do pedido</li>
+          <li> ✏️🗑️ Cadastro, edição e exclusão de produtos.</li>
+          <li> 🔐 Estrutura pronta para autenticação de administrador (em desenvolvimento/expansão futura).</li>
         </ul>
         <h3>Ferramentas utilizadas:</h3>
         <ul>
@@ -408,9 +468,9 @@
           explorar um exemplo criativo de desenvolvimento front-end com foco em jogos 2D simples.</p>
         <h3>Principais funcionalidades:</h3>
         <ul>
-          <li>Simplicidade e facilidade de interação.</li>
-          <li>Resolver problemas indesejaveis.</li>
-          <li>Layout responsivo para diferentes dispositivos.</li>
+          <li> 🧩 Simplicidade e facilidade de interação.</li>
+          <li> 🛠️ Resolver problemas indesejaveis.</li>
+          <li> 📱💻 Layout responsivo para diferentes dispositivos.</li>
         </ul>
         <h3>Ferramentas utilizadas:</h3>
         <ul>
@@ -435,15 +495,16 @@
       <div class="modal-content">
         <span class="fechar" onclick="fecharModal('conversormoedas')">&times;</span>
         <h2>Conversor de Moedas</h2>
-        <p>O Conversor de Moedas é uma aplicação web desenvolvida para facilitar a conversão entre diferentes moedas de
+        <p>O Conversor de Moedas é uma aplicação web desenvolvida para facilitar a conversão entre diferentes moedas
+          de
           forma rápida e prática. Com uma interface simples e responsiva, o projeto permite que o usuário selecione
           moedas de origem e destino e visualize o valor convertido com base nas taxas de câmbio mais recentes.</p>
         <h3>Principais funcionalidades:</h3>
         <ul>
-          <li>Conversão em tempo real ao digitar um valor.</li>
-          <li>Atualização automática com a taxa de câmbio atual.</li>
-          <li>Seleção de moeda de origem e destino via dropdown.</li>
-          <li>Interface amigável e compatível com dispositivos móveis.</li>
+          <li> ⌨️ Conversão em tempo real ao digitar um valor.</li>
+          <li> 🔄 Atualização automática com a taxa de câmbio atual.</li>
+          <li> 🌍 Seleção de moeda de origem e destino via dropdown.</li>
+          <li> 📱✨ Interface amigável e compatível com dispositivos móveis.</li>
         </ul>
         <h3>Ferramentas utilizadas:</h3>
         <ul>
@@ -473,10 +534,10 @@
           aplicação permite ao usuário digitar o nome de uma cidade e receber dados atualizados.</p>
         <h3>Principais funcionalidades:</h3>
         <ul>
-          <li>Previsão em tempo real.</li>
-          <li>Atualização automática da temperatura.</li>
-          <li>Condição do tempo (ensolarado, nublado, chuvoso, etc.).</li>
-          <li>Visualização de umidade.</li>
+          <li> ⏱️ Previsão em tempo real.</li>
+          <li> 🌡️ Atualização automática da temperatura.</li>
+          <li> 🌦️ Condição do tempo (ensolarado, nublado, chuvoso, etc.).</li>
+          <li> 💧 Visualização de umidade.</li>
         </ul>
         <h3>Ferramentas utilizadas:</h3>
         <ul>
