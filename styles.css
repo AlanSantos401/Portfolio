@@ -301,10 +301,16 @@ body.modal-aberto {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    gap: 0.1rem;
 
     i {
-      color:var(--roxoicons);
       font-size: 4rem;
+    }
+
+    img {
+      width: 4rem;
+      height: 4rem;
     }
 
     span {
