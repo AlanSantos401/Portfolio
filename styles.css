@@ -1776,7 +1776,7 @@ footer {
 footer {
   width: 100%;
   background-color:#95c6d2;
-  /* background-color: rgba(29, 13, 40, 0.88); */
+  background-color: rgba(29, 13, 40, 0.88);
   color: var(--claro);
   padding: 1.5rem 5rem 2rem 5rem;
   text-align: center;
