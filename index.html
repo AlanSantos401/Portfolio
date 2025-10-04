@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
   <title>Alan dos Santos</title>
 
@@ -144,12 +146,12 @@
 
   <div class="divisoria"></div>
 
-  <section id="projetos" class="projetos">
+  <section class="projetos" id="projetos">
     <h2>Projetos</h2>
-    <div class="container-projetos">
-      <div class="card-projetos">
 
-        <div class="card-projeto">
+    <div class="swiper mySwiper" style="padding: 25px 50px;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide card-projeto">
           <img src="./assets/automacao.png" alt="Dev Cine">
           <div class="overlay">
             <h3>Automação n8n</h3>
@@ -159,8 +161,7 @@
             <a class="btn-ver" onclick="abrirModal('automacao_n8n')">Ver mais</a>
           </div>
         </div>
-
-        <div class="card-projeto">
+        <div class="swiper-slide card-projeto">
           <div class="premio">
             <img src="./assets/premio.png" alt="Premio">
           </div>
@@ -175,8 +176,7 @@
             <a class="btn-ver" onclick="abrirModal('jogo-da-cobrinha')">Ver mais</a>
           </div>
         </div>
-
-        <div class="card-projeto">
+        <div class="swiper-slide card-projeto"> 
           <img src="./assets/estudando_com_fe.png" alt="Dev Cine">
           <div class="overlay">
             <h3>Estudando com Fé</h3>
@@ -188,8 +188,7 @@
             <a class="btn-ver" onclick="abrirModal('estdando_com_fe')">Ver mais</a>
           </div>
         </div>
-
-        <div class="card-projeto">
+        <div class="swiper-slide card-projeto">
           <img src="./assets/Devbills.png" alt="DevBills">
           <div class="overlay">
             <h3>DevBills</h3>
@@ -201,8 +200,7 @@
             <a class="btn-ver" onclick="abrirModal('devbills')">Ver mais</a>
           </div>
         </div>
-
-        <div class="card-projeto">
+        <div class="swiper-slide card-projeto"> 
           <img src="./assets/devcine.png" alt="Dev Cine">
           <div class="overlay">
             <h3>Dev Cine</h3>
@@ -214,8 +212,7 @@
             <a class="btn-ver" onclick="abrirModal('devcine')">Ver mais</a>
           </div>
         </div>
-
-        <div class="card-projeto">
+        <div class="swiper-slide card-projeto">
           <img src="./assets/primeburguer.png" alt="Prime Burguer">
           <div class="overlay">
             <h3>Prime Burguer</h3>
@@ -227,8 +224,7 @@
             <a class="btn-ver" onclick="abrirModal('primeburguer')">Ver mais</a>
           </div>
         </div>
-
-        <div class="card-projeto">
+        <div class="swiper-slide card-projeto">
           <img src="./assets/projeto-mario.png" alt="Projeto Mario">
           <div class="overlay">
             <h3>Projeto Super Mario</h3>
@@ -240,9 +236,8 @@
             <a class="btn-ver" onclick="abrirModal('projetosupermario')">Ver mais</a>
           </div>
         </div>
-
-        <div class="card-projeto">
-          <img src="./assets/conversor-de-moedas.png" alt="Conversor de Moedas">
+        <div class="swiper-slide card-projeto"> 
+        <img src="./assets/conversor-de-moedas.png" alt="Conversor de Moedas">
           <div class="overlay">
             <h3>Conversor de Moedas</h3>
             <div class="icons">
@@ -253,8 +248,7 @@
             <a class="btn-ver" onclick="abrirModal('conversormoedas')">Ver mais</a>
           </div>
         </div>
-
-        <div class="card-projeto">
+        <div class="swiper-slide card-projeto">
           <img src="./assets/previsao-do-tempo.png" alt="Previsao do tempo">
           <div class="overlay">
             <h3>Previsão do Tempo</h3>
@@ -268,9 +262,15 @@
         </div>
 
       </div>
+
+      <!-- Botões -->
+      <div class="swiper-button-next" style="color: #7c3aed; font-weight: 600;"></div>
+      <div class="swiper-button-prev" style="color: #7c3aed; font-weight: 700;"></div>
+      <!-- Paginação -->
+      <div class="swiper-pagination"></div>
     </div>
 
-    <div id="automacao_n8n" class="modal">
+      <div id="automacao_n8n" class="modal">
       <div class="modal-content">
         <span class="fechar" onclick="fecharModal('automacao_n8n')">&times;</span>
         <h2>🤖 Projetos de Automação Inteligente</h2>
@@ -663,6 +663,7 @@
 
   </section>
 
+
   <div class="divisoria"></div>
 
   <section id="contatos" class="contatos">
@@ -708,6 +709,7 @@
 <footer>
   <p>© 2025 Alan dos Santos. Todos os direitos reservados.</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./scripts.js"></script>
 
 </html>
