@@ -176,7 +176,7 @@
             <a class="btn-ver" onclick="abrirModal('jogo-da-cobrinha')">Ver mais</a>
           </div>
         </div>
-        <div class="swiper-slide card-projeto"> 
+        <div class="swiper-slide card-projeto">
           <img src="./assets/estudando_com_fe.png" alt="Dev Cine">
           <div class="overlay">
             <h3>Estudando com Fé</h3>
@@ -200,7 +200,7 @@
             <a class="btn-ver" onclick="abrirModal('devbills')">Ver mais</a>
           </div>
         </div>
-        <div class="swiper-slide card-projeto"> 
+        <div class="swiper-slide card-projeto">
           <img src="./assets/devcine.png" alt="Dev Cine">
           <div class="overlay">
             <h3>Dev Cine</h3>
@@ -236,8 +236,8 @@
             <a class="btn-ver" onclick="abrirModal('projetosupermario')">Ver mais</a>
           </div>
         </div>
-        <div class="swiper-slide card-projeto"> 
-        <img src="./assets/conversor-de-moedas.png" alt="Conversor de Moedas">
+        <div class="swiper-slide card-projeto">
+          <img src="./assets/conversor-de-moedas.png" alt="Conversor de Moedas">
           <div class="overlay">
             <h3>Conversor de Moedas</h3>
             <div class="icons">
@@ -253,9 +253,9 @@
           <div class="overlay">
             <h3>Previsão do Tempo</h3>
             <div class="icons">
-              <i class="devicon-html5-plain"></i>
+              <i class="devicon-react-original"></i>
+              <i class="devicon-typescript-plain"></i>
               <i class="devicon-css3-plain"></i>
-              <i class="devicon-javascript-plain"></i>
             </div>
             <a class="btn-ver" onclick="abrirModal('previsao-do-tempo')">Ver mais</a>
           </div>
@@ -270,7 +270,7 @@
       <div class="swiper-pagination"></div>
     </div>
 
-      <div id="automacao_n8n" class="modal">
+    <div id="automacao_n8n" class="modal">
       <div class="modal-content">
         <span class="fechar" onclick="fecharModal('automacao_n8n')">&times;</span>
         <h2>🤖 Projetos de Automação Inteligente</h2>
@@ -297,10 +297,13 @@
 
         <h3>2️⃣ Agentes Inteligentes por Área</h3>
         <ul>
-          <li><strong>Agente de Curiosidades:</strong> Envia fatos, dicas e curiosidades para engajamento dos usuários.</li>
+          <li><strong>Agente de Curiosidades:</strong> Envia fatos, dicas e curiosidades para engajamento dos usuários.
+          </li>
           <li><strong>Agente Financeiro:</strong> Analisa dados financeiros, gera relatórios e envia alertas.</li>
-          <li><strong>Agente de Vendas:</strong> Automatiza follow-ups, envio de propostas e notificações para clientes.</li>
-          <li><strong>Agente de Clínicas:</strong> Gerencia agendamento, envio de lembretes e relatórios de pacientes.</li>
+          <li><strong>Agente de Vendas:</strong> Automatiza follow-ups, envio de propostas e notificações para clientes.
+          </li>
+          <li><strong>Agente de Clínicas:</strong> Gerencia agendamento, envio de lembretes e relatórios de pacientes.
+          </li>
           <li><strong>Análise de Reels:</strong> Coleta e analisa métricas de vídeos para otimização de conteúdo.</li>
         </ul>
 
@@ -616,7 +619,7 @@
           Mobile:
           <a class="repositorio" href="https://github.com/AlanSantos401/Conversor-App.git" target="_blank"
             rel="noopener noreferrer">
-            "https://github.com/AlanSantos401/Conversor-App.git
+            https://github.com/AlanSantos401/Conversor-App.git
           </a>
         </div>
 
@@ -631,35 +634,84 @@
     <div id="previsao-do-tempo" class="modal">
       <div class="modal-content">
         <span class="fechar" onclick="fecharModal('previsao-do-tempo')">&times;</span>
-        <h2> 🌤️ Previsão do Tempo</h2>
-        <p>O projeto Previsão do Tempo é uma aplicação web simples e intuitiva que exibe informações meteorológicas em
-          tempo real de qualquer cidade do mundo. Utilizando integração com APIs de clima (como OpenWeatherMap), a
-          aplicação permite ao usuário digitar o nome de uma cidade e receber dados atualizados.</p>
-        <h3>Principais funcionalidades:</h3>
+
+        <h2>🌤️ DevTempo — (Web & Mobile)</h2>
+
+        <p>
+          O <strong>DevTempo</strong> é um projeto completo de previsão do tempo, disponível em versão
+          <strong>Web</strong> e <strong>Mobile</strong>, desenvolvido com foco em usabilidade,
+          visual moderno e dados climáticos em tempo real.
+          O sistema permite ao usuário pesquisar qualquer cidade do mundo e visualizar informações
+          meteorológicas de forma clara, intuitiva e responsiva.
+        </p>
+
+        <h3>🔹 Principais funcionalidades:</h3>
         <ul>
-          <li> ⏱️ Previsão em tempo real.</li>
-          <li> 🌡️ Atualização automática da temperatura.</li>
-          <li> 🌦️ Condição do tempo (ensolarado, nublado, chuvoso, etc.).</li>
-          <li> 💧 Visualização de umidade.</li>
+          <li>🔍 Busca de cidades com navegação dinâmica</li>
+          <li>🌡️ Clima atual (temperatura, sensação térmica, umidade e vento)</li>
+          <li>⏰ Previsão horária para as próximas horas</li>
+          <li>📅 Previsão estendida para os próximos dias</li>
+          <li>🌙🎨 Background dinâmico que muda conforme o clima e período (dia/noite)</li>
+          <li>⚠️ Tratamento de erros (cidade não encontrada, loading e estados vazios)</li>
+          <li>🧼 Limpeza automática do input após a busca</li>
+          <li>📱 Layout totalmente responsivo (Web, Tablets e Mobile)</li>
         </ul>
-        <h3>Ferramentas utilizadas:</h3>
+
+        <h3>🛠️ Tecnologias utilizadas (Web):</h3>
         <ul>
-          <li><strong>Html:5:</strong> Estruturação da interface.</li>
-          <li><strong>Css:</strong> Estilização visual e responsividade.</li>
-          <li><strong>JavaScript:</strong> Lógica de aplicação, manipulação de dados da API.</li>
+          <li><strong>React</strong></li>
+          <li><strong>TypeScript</strong></li>
+          <li><strong>Styled-Components</strong></li>
+          <li><strong>OpenWeather API</strong></li>
+          <li><strong>Hooks personalizados</strong></li>
+          <li><strong>Componentização e boas práticas de estado</strong></li>
+          <li><strong>Git & GitHub</strong></li>
         </ul>
+
+        <h3>📱 Tecnologias utilizadas (App Mobile):</h3>
+        <ul>
+          <li><strong>React Native</strong></li>
+          <li><strong>Expo</strong></li>
+          <li><strong>TypeScript</strong></li>
+          <li><strong>Expo Router</strong></li>
+          <li><strong>Axios</strong></li>
+          <li><strong>OpenWeather API</strong></li>
+          <li><strong>Hooks personalizados</strong></li>
+          <li><strong>Git & GitHub</strong></li>
+        </ul>
+
+        <h3>📌 Projeto focado em:</h3>
+        <ul>
+          <li>✔️ Boa experiência do usuário (UX)</li>
+          <li>✔️ Código organizado e escalável</li>
+          <li>✔️ Tratamento correto de estados (loading, sucesso e erro)</li>
+        </ul>
+
         <div>
-          <h3>Repositório:</h3>
-          <a class="repositorio" href="https://github.com/AlanSantos401/Previsao-do-tempo.git" target="_blank"
-            rel="noopener noreferrer">https://github.com/AlanSantos401/Previsao-do-tempo.git</a>
+          <h3>🔗 Repositórios:</h3>
+          <p>
+            <a class="repositorio" href="https://github.com/AlanSantos401/DevTempo-web" target="_blank">
+              Web — GitHub
+            </a>
+          </p>
+          <p>
+            <a class="repositorio" href="https://github.com/AlanSantos401/DevTempo-Mobile" target="_blank">
+              App Mobile — GitHub
+            </a>
+          </p>
         </div>
+
         <div class="links-github">
-          <video src="./videos/previsao-do-tempo.mp4" controls> </video>
-          <a href="https://alansantos401.github.io/Previsao-do-tempo/" target="_blank" rel="noopener noreferrer">Ver
-            Projeto</a>
+          <video src="./videos/previsao-do-tempo.mp4" controls></video>
+
+          <a href="https://previsao-do-tempo-am2p.vercel.app/" target="_blank">
+            🌍 Ver Projeto Web
+          </a>
         </div>
+
       </div>
     </div>
+
 
   </section>
 
