@@ -1,0 +1,14 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+
+  <rect width="128" height="128" rx="20" fill="#4CAF50"></rect>
+
+  <!-- setas de comunicação -->
+  <polygon points="30,64 55,45 55,58 90,58 90,70 55,70 55,83" fill="white"></polygon>
+  <polygon points="98,64 73,83 73,70 38,70 38,58 73,58 73,45" fill="white"></polygon>
+
+  <!-- texto -->
+  <text x="50%" y="110" dominant-baseline="middle" text-anchor="middle" font-size="16" fill="white" font-family="Arial">
+    API
+  </text>
+
+</svg>

@@ -1,0 +1,10 @@
+<svg width="128" height="128" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="viteGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#41D1FF"></stop>
+      <stop offset="100%" stop-color="#BD34FE"></stop>
+    </linearGradient>
+  </defs>
+
+  <polygon points="128,20 230,60 180,210 76,210 26,60" fill="url(#viteGradient)"></polygon>
+</svg>

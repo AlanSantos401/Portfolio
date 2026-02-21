@@ -1,0 +1,13 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+
+  <rect width="128" height="128" rx="20" fill="#000000"></rect>
+
+  <!-- R -->
+  <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" font-size="46" fill="#ffffff" font-family="Arial">
+    R
+  </text>
+
+  <!-- Texto pequeno -->
+  <text x="50%" y="85%" dominant-baseline="middle" text-anchor="middle" font-size="14" fill="#ffffff" font-family="Arial">
+    Expo Router
+  &lt;/</text></svg>

@@ -1,0 +1,12 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+
+  <rect width="128" height="128" rx="20" fill="#FFCA28"></rect>
+
+  <!-- chama do Firebase -->
+  <path d="M40 100 L64 20 L88 100 Z" fill="#FFA000"></path>
+
+  <path d="M52 100 L64 50 L76 100 Z" fill="#FF6F00"></path>
+
+  <path d="M40 100 L52 70 L64 85 L76 70 L88 100 Z" fill="#FFFFFF" opacity="0.2"></path>
+
+</svg>

@@ -1,0 +1,27 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+
+  <rect width="128" height="128" rx="20" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"></rect>
+
+  <!-- G do Google simplificado -->
+  <path d="M64 28
+           C44 28 30 42 30 64
+           C30 86 44 100 64 100
+           C82 100 96 88 98 70
+           H64 V58 H110
+           C112 80 94 108 64 108
+           C36 108 20 88 20 64
+           C20 40 36 20 64 20
+           C76 20 86 24 94 32
+           L84 42
+           C78 36 72 34 64 34Z" fill="#4285F4"></path>
+
+  <!-- Cadeado -->
+  <rect x="46" y="62" width="36" height="26" rx="6" fill="#34A853"></rect>
+
+  <path d="M52 62
+           V54
+           C52 46 58 42 64 42
+           C70 42 76 46 76 54
+           V62" fill="none" stroke="#34A853" stroke-width="4"></path>
+
+</svg>

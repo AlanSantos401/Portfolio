@@ -1,0 +1,26 @@
+<svg width="128" height="128" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Fundo -->
+  <rect width="256" height="256" rx="40" fill="black"></rect>
+
+  <!-- Símbolo CapCut -->
+  <path d="
+    M60 80 
+    L196 80 
+    L160 110 
+    L96 110 
+    Z
+
+    M96 146
+    L160 146
+    L196 176
+    L60 176
+    Z
+
+    M60 80
+    L96 110
+    L160 146
+    L196 176
+  " fill="none" stroke="white" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"></path>
+
+</svg>
