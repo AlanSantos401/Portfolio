@@ -1,6 +1,34 @@
 const links = document.querySelectorAll(".menu-link");
 const sections = document.querySelectorAll("main, section");
 
+const carrosseis = document.querySelectorAll('#carrossel, #carrossel-left');
+
+criarCarrosselAutomatico(document.querySelector('#carrossel'), 0.5, 'esquerda');
+criarCarrosselAutomatico(document.querySelector('#carrossel-left'), 0.5, 'direita');
+criarCarrosselAutomatico(document.querySelector('#carrossel-right'), 0.5, 'esquerda');
+
+function criarCarrosselAutomatico(container, velocidade = 0.4, sentido = 'direita') {
+  let x = 0;
+
+  container.innerHTML += container.innerHTML;
+
+  function animar() {
+    x += sentido === 'direita' ? velocidade : -velocidade;
+
+    const metade = container.scrollWidth / 2;
+
+    if (x >= metade) x = 0;
+    if (x <= -metade) x = 0;
+
+    container.style.transform = `translateX(${-x}px)`;
+
+    requestAnimationFrame(animar);
+  }
+
+  animar();
+}
+
+
 function ativarLinkNaScroll() {
   let scrollY = window.scrollY;
 
@@ -36,7 +64,7 @@ function fecharModal(id) {
 const video = document.getElementById('meuVideo');
 const overlay = document.getElementById('videoOverlay');
 
-if(video && overlay){
+if (video && overlay) {
   video.addEventListener('canplay', () => {
     overlay.style.animation = 'fadeOut 1.5s ease-out forwards';
   });
@@ -60,7 +88,7 @@ const swiper = new Swiper(".mySwiper", {
   },
 
   breakpoints: {
-    320: { 
+    320: {
       slidesPerView: 1,
       spaceBetween: 65,
     },
@@ -68,12 +96,12 @@ const swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 65,
     },
-    1024: { 
+    1024: {
       slidesPerView: 3,
       spaceBetween: 60,
     },
   },
-  
+
 });
 
 document.querySelectorAll(".btn-ver").forEach(btn => {

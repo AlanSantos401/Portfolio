@@ -296,40 +296,57 @@ html.is-animating .transition-fade {
     cursor: grab;
     user-select: none;
     touch-action: pan-y;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 
 }
 
 .carrossel-habilidades {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 
 .icon-habilidade {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5rem; 
+    padding: 0.6rem 0.7rem;
+    border-radius: 2rem; 
     text-align: center;
-    gap: 0.1rem;
+    gap: 0.5rem;
+    background-color: #171717;
 
     i {
-      font-size: 3.8rem;
+      font-size: 2rem;
     }
 
     img {
-      width: 3.8rem;
-      height: 3.8rem;
+      width: 2.1rem;
+      height: 2.1rem;
     }
 
     span {
       color:var(--roxoicons);
       font-size: 1.4rem;
+      font-weight: bold;   
+      white-space: nowrap;
     }
+}
+
+.icon {
+  width: 3.75rem;   /* 50px */
+  height: 3.75rem;  /* 50px */
+
+  background: #2d2d2d;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .foto-habilidades {
@@ -912,28 +929,10 @@ footer {
 }
 
 .carrossel-habilidades {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
-}
-
-.icon-habilidade {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    i {
-      color:var(--roxoicons);
-      font-size: 4rem;
-    }
-
-    span {
-      color:var(--roxoicons);
-      font-size: 1.5rem;
-    }
+    
 }
 
 .foto-habilidades {
@@ -1466,31 +1465,6 @@ footer {
     touch-action: pan-y;
 }
 
-.carrossel-habilidades {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     justify-content: center;
-     align-items: center;
-     gap: 0.5rem;
-}
-     
-
-.icon-habilidade {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    i {
-      color:var(--roxoicons);
-      font-size: 2.7rem;
-    }
-
-    span {
-      color:var(--roxoicons);
-      font-size: 1.2rem;
-    }
-}
 /* Habilidades */
 
 /* Projetos */
